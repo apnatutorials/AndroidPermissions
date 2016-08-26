@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+    <TextView android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Hi, This layout has rounded corner borders ..."
+        android:gravity="center"
+        android:background="@drawable/rounded_layout"
+        android:padding="20dp"
+        android:layout_weight="0.10" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Normal button"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Rounded button"
+        android:background="@drawable/rounded_layout"
+        />
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:collapseColumns="*"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_layout"
+        >
+        <TableRow>
+            <TextView android:layout_span="2" android:text="Rounded layout demo" android:layout_gravity="center_horizontal" />
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Name" />
+            <EditText android:hint="Enter name"/>
+        </TableRow>
+        <TableRow>
+            <TextView android:text="Password" />
+            <EditText android:hint="Enter password"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
